@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    background-color: #90F1EF;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+header h1{
+    text-align: center;
+}
+body{
+    position: relative;
+    top: 8rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main_income{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #90F1EF;
+    width: 40%;
+    border-radius: 2rem;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25rem;
+}
+.paycheck{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.paycheck input{
+    outline: none;
+    border: 2px solid black;
+    padding: .5rem;
+}
+.paycheck button{
+    padding: .5rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    transition: all 500ms;
+}
+.paycheck button:hover{
+    box-shadow: 2px 2px 5px black;
+    transition: all 500ms;
+}
+.paycheck button:active{
+    background-color: black;
+    color: white;
+    transition: all 0ms;
+}
+.rate{
+    width: 45%;
+    margin-bottom: 2rem;
+}
+.hours{
+    width: 45%;
+    margin-bottom: 2rem;
+}
+.total{
+    width: 100%;
+}
+
+

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Income</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="income.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <header>
@@ -15,12 +15,18 @@
     <div class="main_income">
         <h3>Job Income</h3>
         <div class="paycheck">
-            <h4>Rate</h4>
-            <input type="text" placeholder="Current Rate per Hour">
-            <h4>Hours</h4>
-            <input type="text" placeholder="Hours Worked">
-            <button type="submit" id="calculatePay">Calculate Pay</button>
-            <h4 class="weekTotal"></h4>
+            <div class="rate">
+                <h4>Rate</h4>
+                <input type="text" placeholder="Current Rate per Hour">
+            </div>
+            <div class="hours">
+                <h4>Hours</h4>
+                <input type="text" placeholder="Hours Worked">
+            </div>
+            <div class="total">
+                <button type="submit" id="calculatePay">Calculate Pay</button>
+                <h4 class="weekTotal">Total-Gross:</h4>
+            </div>
             <div class="prev_four">
                 <canvas id="incomeChart"></canvas>
             </div>
